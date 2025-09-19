@@ -112,7 +112,7 @@ ol {
   margin-bottom: 5px;
   font-size: 18px;
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .search-form__textfield::placeholder {
@@ -135,16 +135,19 @@ ol {
   min-block-size: 15px;
   background-color: #fff;
 }
+
 .content__list-container {
+  padding-right: 3px;
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   height: 298px;
   overflow: auto;
 }
 
 .content__list {
+  min-width: 390px;
+  width: 100%;
   display: flex;
   gap: 30px;
   flex-direction: column;
@@ -153,7 +156,7 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 17px;
   width: 100%;
   height: 100%;
 }
@@ -221,8 +224,10 @@ ol {
 }
 
 .more-button {
+  margin-top: 30px;
   width: 100%;
-  height: 34px;
+  min-height: 34px;
+  line-height: 32px;
 }
 
 .button:hover {
@@ -277,7 +282,10 @@ ol {
   font-weight: 400;
   line-height: 17px;
   letter-spacing: 0%;
-  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; 
+  line-clamp: 4;
+  overflow: hidden; 
 }
 
 .content__card-link_current {
@@ -289,23 +297,24 @@ ol {
   padding-right: 3px;
 }
 
-.content__list-item:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
-.content__list-item:hover {
+.content__card-link:hover {
   text-decoration: underline 1px;
   text-underline-offset: 3px;
   cursor: pointer;
 }
 
-.content__list-item:focus {
+.content__card-link:focus {
   outline: none;
 }
 
-.content__list-item:focus-visible {
+.content__card-link:focus-visible {
   outline: 1px solid #fff;
 }
+
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
