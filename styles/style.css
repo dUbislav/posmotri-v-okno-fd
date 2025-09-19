@@ -85,7 +85,7 @@ ol {
 
 .search-form__textfield {
   width: 225px;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   background-color: transparent;
@@ -110,7 +110,8 @@ ol {
 
 .search-form__fieldset-title {
   margin-bottom: 5px;
-  font: inherit;
+  font-size: 18px;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
 }
 
